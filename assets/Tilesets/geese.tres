@@ -1,0 +1,12 @@
+[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://bt6ynubaqi4ru"]
+
+[ext_resource type="Texture2D" uid="uid://c1wida5gr4m20" path="res://assets/Goose.png" id="1_60uww"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8j4mw"]
+texture = ExtResource("1_60uww")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+
+[resource]
+tile_size = Vector2i(32, 32)
+sources/0 = SubResource("TileSetAtlasSource_8j4mw")

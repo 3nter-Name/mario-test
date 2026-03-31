@@ -1,0 +1,22 @@
+[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://bmqk7g28a7f0t"]
+
+[ext_resource type="Texture2D" uid="uid://br75aqlblfuf2" path="res://assets/Tilesets/Enviroment_01.png" id="1_vbi3h"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6oryh"]
+texture = ExtResource("1_vbi3h")
+margins = Vector2i(5, 5)
+separation = Vector2i(5, 0)
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+3:0/0 = 0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+
+[resource]
+tile_size = Vector2i(32, 32)
+physics_layer_0/collision_layer = 2
+sources/0 = SubResource("TileSetAtlasSource_6oryh")

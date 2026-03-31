@@ -1,0 +1,34 @@
+[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://bsyybnawb8yuv"]
+
+[ext_resource type="Texture2D" uid="uid://coh3ytrbp5khf" path="res://assets/Tilesets/Goody_Block.png" id="1_m8dq8"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sdu3x"]
+texture = ExtResource("1_m8dq8")
+margins = Vector2i(5, 5)
+separation = Vector2i(5, 0)
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-15.942028, -16.025932, 15.942024, -15.942027, 16.025932, 16.025932, -16.097355, 16.00743)
+0:0/0/custom_data_0 = "coin"
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-15.942028, -16.025932, 15.942024, -15.942027, 16.025932, 16.025932, -16.097355, 16.00743)
+1:0/0/custom_data_0 = "coin"
+2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-15.942028, -16.025932, 15.942024, -15.942027, 16.025932, 16.025932, -16.097355, 16.00743)
+2:0/0/custom_data_0 = "star"
+3:0/0 = 0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-15.942028, -16.025932, 15.942024, -15.942027, 16.025932, 16.025932, -16.097355, 16.00743)
+3:0/0/custom_data_0 = "fire"
+4:0/0 = 0
+4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-15.942028, -16.025932, 15.942024, -15.942027, 16.025932, 16.025932, -16.097355, 16.00743)
+4:0/0/custom_data_0 = "coin"
+5:0/0 = 0
+5:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-15.942028, -16.025932, 15.942024, -15.942027, 16.025932, 16.025932, -16.097355, 16.00743)
+5:0/0/custom_data_0 = "grow"
+
+[resource]
+tile_size = Vector2i(32, 32)
+physics_layer_0/collision_layer = 2
+custom_data_layer_0/name = "Inventory"
+custom_data_layer_0/type = 4
+sources/0 = SubResource("TileSetAtlasSource_sdu3x")
