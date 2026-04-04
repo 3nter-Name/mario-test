@@ -42,7 +42,7 @@ scale = Vector2(303.27243, 6.596283)
 shape = SubResource("RectangleShape2D_tj5wv")
 
 [node name="Spawnpoint" type="Marker2D" parent="."]
-position = Vector2(155, 538)
+position = Vector2(143, 538)
 
 [node name="Bus_Stop" parent="." instance=ExtResource("6_tj5wv")]
 position = Vector2(6391, 576)

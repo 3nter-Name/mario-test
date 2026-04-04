@@ -30,3 +30,7 @@ func _on_player_respawn() -> void:
 
 func _on_player_died() -> void:
 	get_tree().change_scene_to_file("res://Scenes/Story/story_died.tscn");
+
+
+func _on_area_2d_body_entered(body: Node2D) -> void:
+	get_tree().change_scene_to_file("res://Scenes/Story/Story02.tscn");
