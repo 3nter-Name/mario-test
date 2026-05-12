@@ -1,0 +1,83 @@
+[gd_scene load_steps=8 format=3 uid="uid://2oo1xe1foiic"]
+
+[ext_resource type="Script" uid="uid://dyewgsckergpm" path="res://Scenes/Story/story_01.gd" id="1_prq20"]
+[ext_resource type="Texture2D" uid="uid://cx5b2fdjirfxn" path="res://assets/Buttons/Start/Start_base.png" id="2_fuskj"]
+[ext_resource type="Texture2D" uid="uid://bxfmt5a3m54nw" path="res://assets/Background_sky.png" id="2_fwdjv"]
+[ext_resource type="Texture2D" uid="uid://bl5w8eoktg2f7" path="res://assets/Buttons/Start/Start_Hover.png" id="4_fuskj"]
+[ext_resource type="Texture2D" uid="uid://dqr03xvk1u6lf" path="res://assets/Buttons/Back/Back_Base.png" id="4_lmifs"]
+[ext_resource type="Texture2D" uid="uid://f3or8x2io381" path="res://assets/Buttons/Back/Back_Hover.png" id="5_t0ix1"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_fuskj"]
+font_size = 32
+font_color = Color(0, 0.8509804, 0.37254903, 1)
+outline_size = 5
+outline_color = Color(0, 0, 0, 1)
+
+[node name="Story01" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_prq20")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 446.1539
+offset_bottom = 256.0
+scale = Vector2(2.6, 2.6)
+texture = ExtResource("2_fwdjv")
+stretch_mode = 1
+
+[node name="Story_Text" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -422.5
+offset_top = -94.5
+offset_right = 422.5
+offset_bottom = 94.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Crap! You are running late, the bus is going to leave without you! Get going or you'll be late to work! Try to grab some coins on the way, maybe you could get some lunch today! "
+label_settings = SubResource("LabelSettings_fuskj")
+autowrap_mode = 2
+
+[node name="Start" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -64.0
+offset_top = -98.0
+offset_right = 64.0
+offset_bottom = -34.0
+grow_horizontal = 2
+grow_vertical = 0
+texture_normal = ExtResource("2_fuskj")
+texture_hover = ExtResource("4_fuskj")
+
+[node name="Back" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -152.0
+offset_top = -98.0
+offset_right = -24.0
+offset_bottom = -34.0
+grow_horizontal = 0
+grow_vertical = 0
+texture_normal = ExtResource("4_lmifs")
+texture_hover = ExtResource("5_t0ix1")
+
+[connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]
