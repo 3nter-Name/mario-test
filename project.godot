@@ -18,6 +18,11 @@ config/name="Mario Test"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+GLOBAL="*uid://bgm4hbghkscv8"
+SAVE="*uid://8k121ts40ry"
+
 [input]
 
 jump={
